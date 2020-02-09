@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Polygon?>
+
+<AnchorPane prefHeight="506.0" prefWidth="882.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AnimationWindowController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="735.0" fitWidth="1096.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pexels-photo-889929.jpeg" />
+         </image>
+      </ImageView>
+      <HBox layoutX="24.0" layoutY="14.0" spacing="10.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <Button id="my-button" mnemonicParsing="false" onAction="#playAnimation" stylesheets="@../controller/application.css" text="Play" />
+            <Button id="my-button" mnemonicParsing="false" onAction="#pauseAnimation" stylesheets="@../controller/application.css" text="Pause" />
+            <Button id="my-button" mnemonicParsing="false" onAction="#stopAnimation" stylesheets="@../controller/application.css" text="Stop" />
+            <Button id="my-button" mnemonicParsing="false" onAction="#closeAnimationWindow" stylesheets="@../controller/application.css" text="Close" />
+         </children>
+      </HBox>
+      <Group fx:id="fish" layoutX="139.0" layoutY="400.0" scaleX="0.5" scaleY="0.5">
+         <children>
+            <Ellipse radiusX="111.0" radiusY="50.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.2523809523809524" startY="0.03333333333333333">
+                     <stops>
+                        <Stop color="#4570cc" />
+                        <Stop color="#721b1b" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill></Ellipse>
+            <Circle fill="#d6ff1f" layoutX="76.0" layoutY="-10.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#dfff1f" points="35.0, 42.0, 35.0, -1.0, 7.0, -1.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon layoutX="-118.0" layoutY="-8.0" points="-40.0, 75.0, 13.0, 6.0, -40.0, -58.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.44285714285714284">
+                     <stops>
+                        <Stop color="#c8e40e" />
+                        <Stop color="#2138ff" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill></Polygon>
+         </children>
+      </Group>
+      <Group fx:id="fish1" layoutX="173.0" layoutY="334.0" scaleX="0.5" scaleY="0.5">
+         <children>
+            <Ellipse radiusX="111.0" radiusY="50.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.03333333333333333">
+                     <stops>
+                        <Stop color="#52cd44" />
+                        <Stop color="#721b1b" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill></Ellipse>
+            <Circle fill="#d6ff1f" layoutX="76.0" layoutY="-10.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon fill="#dfff1f" points="35.0, 42.0, 35.0, -1.0, 7.0, -1.0" stroke="BLACK" strokeType="INSIDE" />
+            <Polygon layoutX="-118.0" layoutY="-8.0" points="-40.0, 75.0, 13.0, 6.0, -40.0, -58.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.44285714285714284">
+                     <stops>
+                        <Stop color="#c8e40e" />
+                        <Stop color="#47b916" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill></Polygon>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

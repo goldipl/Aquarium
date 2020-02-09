@@ -1,0 +1,16 @@
+#my-button {
+    -fx-background-color:
+        linear-gradient(aquamarine, blue);
+    -fx-font-size:14px;
+    -fx-padding: 5 20 5 20;
+    -fx-text-color: white;
+}
+
+#my-button:hover {
+    -fx-background-color:
+        linear-gradient(blue, aquamarine);
+        -fx-scale-y: 1.10;
+        -fx-scale-x: 1.10;
+        -fx-cursor: hand;
+        -fx-text-color: white;
+}
